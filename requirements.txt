@@ -3,3 +3,5 @@ Pillow>=10.0
 torch>=2.2
 medmnist>=3.0.2
 scikit-learn>=1.4
+flask>=3.0
+flask-cors>=4.0
