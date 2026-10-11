@@ -1,0 +1,150 @@
+{
+  "purpose": "Reload a locked checkpoint and summarize discrimination plus calibration.",
+  "checkpoint": "runs/breastmnist_baseline_seed7/model.pt",
+  "split": "test",
+  "sample_count": 156,
+  "selected_epoch": 5,
+  "metrics": {
+    "accuracy": 0.8333333333333334,
+    "precision": 0.6739130434782609,
+    "recall": 0.7380952380952381,
+    "specificity": 0.868421052631579,
+    "roc_auc": 0.8765664160401003,
+    "pr_auc": 0.7710832296122097,
+    "confidence_intervals_95": {
+      "accuracy": [
+        0.782051282051282,
+        0.8943910256410256
+      ],
+      "precision": [
+        0.5818181818181818,
+        0.7954545454545454
+      ],
+      "recall": [
+        0.5952380952380952,
+        0.8571428571428571
+      ],
+      "specificity": [
+        0.8070175438596491,
+        0.9298245614035088
+      ],
+      "roc_auc": [
+        0.8161758563074352,
+        0.9383876357560569
+      ],
+      "pr_auc": [
+        0.6713034381739419,
+        0.8884662343903716
+      ]
+    }
+  },
+  "confusion_at_default_threshold": {
+    "threshold": 0.5,
+    "true_positives": 31,
+    "true_negatives": 99,
+    "false_positives": 15,
+    "false_negatives": 11
+  },
+  "calibration": {
+    "sample_count": 156,
+    "positive_count": 42,
+    "bin_count": 10,
+    "brier_score": 0.12284902142200042,
+    "expected_calibration_error": 0.08419253267325424,
+    "bins": [
+      {
+        "index": 0,
+        "left": 0.0,
+        "right": 0.1,
+        "count": 58,
+        "mean_confidence": 0.03550980353210089,
+        "positive_rate": 0.05172413793103448,
+        "absolute_gap": 0.01621433439893359
+      },
+      {
+        "index": 1,
+        "left": 0.1,
+        "right": 0.2,
+        "count": 29,
+        "mean_confidence": 0.14442585999595708,
+        "positive_rate": 0.1724137931034483,
+        "absolute_gap": 0.027987933107491203
+      },
+      {
+        "index": 2,
+        "left": 0.2,
+        "right": 0.30000000000000004,
+        "count": 12,
+        "mean_confidence": 0.24203653012712797,
+        "positive_rate": 0.0,
+        "absolute_gap": 0.24203653012712797
+      },
+      {
+        "index": 3,
+        "left": 0.30000000000000004,
+        "right": 0.4,
+        "count": 7,
+        "mean_confidence": 0.3336089253425598,
+        "positive_rate": 0.2857142857142857,
+        "absolute_gap": 0.047894639628274116
+      },
+      {
+        "index": 4,
+        "left": 0.4,
+        "right": 0.5,
+        "count": 4,
+        "mean_confidence": 0.4385411888360977,
+        "positive_rate": 0.25,
+        "absolute_gap": 0.18854118883609772
+      },
+      {
+        "index": 5,
+        "left": 0.5,
+        "right": 0.6000000000000001,
+        "count": 6,
+        "mean_confidence": 0.5540613035360972,
+        "positive_rate": 0.16666666666666666,
+        "absolute_gap": 0.38739463686943054
+      },
+      {
+        "index": 6,
+        "left": 0.6000000000000001,
+        "right": 0.7000000000000001,
+        "count": 0,
+        "mean_confidence": null,
+        "positive_rate": null,
+        "absolute_gap": null
+      },
+      {
+        "index": 7,
+        "left": 0.7000000000000001,
+        "right": 0.8,
+        "count": 8,
+        "mean_confidence": 0.7635424584150314,
+        "positive_rate": 0.5,
+        "absolute_gap": 0.26354245841503143
+      },
+      {
+        "index": 8,
+        "left": 0.8,
+        "right": 0.9,
+        "count": 12,
+        "mean_confidence": 0.8499872585137686,
+        "positive_rate": 0.6666666666666666,
+        "absolute_gap": 0.18332059184710192
+      },
+      {
+        "index": 9,
+        "left": 0.9,
+        "right": 1.0,
+        "count": 20,
+        "mean_confidence": 0.9377766728401185,
+        "positive_rate": 0.9,
+        "absolute_gap": 0.03777667284011843
+      }
+    ],
+    "warning": "Calibration on a tiny public split is descriptive only. Do not choose a clinical threshold or treat well-calibrated scores as safe probabilities."
+  },
+  "weights_updated": false,
+  "threshold_selected": false
+}

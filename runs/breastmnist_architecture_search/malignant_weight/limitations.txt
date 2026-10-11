@@ -1,0 +1,1 @@
+Dataset: breastmnist. Metrics do not indicate clinical accuracy. Not for patient care, diagnosis, triage, treatment, or monitoring.

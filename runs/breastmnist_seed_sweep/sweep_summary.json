@@ -1,0 +1,254 @@
+{
+  "purpose": "Training-seed variability on one fixed BreastMNIST split; not external validation.",
+  "seeds": [
+    7,
+    11,
+    23
+  ],
+  "shared_test_split_size": 156,
+  "runs": [
+    {
+      "seed": 7,
+      "selected_epoch": 4,
+      "test_loss": 0.42297919438435483,
+      "test_metrics": {
+        "accuracy": 0.8141025641025641,
+        "precision": 0.6756756756756757,
+        "recall": 0.5952380952380952,
+        "specificity": 0.8947368421052632,
+        "roc_auc": 0.8343776106934002,
+        "pr_auc": 0.6893108334752639,
+        "confidence_intervals_95": {
+          "accuracy": [
+            0.7564102564102564,
+            0.8653846153846154
+          ],
+          "precision": [
+            0.5521551724137931,
+            0.8096270161290321
+          ],
+          "recall": [
+            0.4523809523809524,
+            0.7380952380952381
+          ],
+          "specificity": [
+            0.8421052631578947,
+            0.9473684210526315
+          ],
+          "roc_auc": [
+            0.7619047619047619,
+            0.9061246867167919
+          ],
+          "pr_auc": [
+            0.5747071076792026,
+            0.8451396927479224
+          ]
+        }
+      },
+      "run_config": {
+        "data": "data\\medmnist",
+        "dataset": "breastmnist",
+        "output": "runs\\breastmnist_seed_sweep\\seed_7",
+        "samples": 1000,
+        "epochs": 5,
+        "batch_size": 32,
+        "learning_rate": 0.0005,
+        "seed": 7,
+        "base_channels": 8,
+        "cpu_threads": 2,
+        "device": "cpu",
+        "torch_version": "2.14.1+cpu",
+        "numpy_version": "2.5.2",
+        "split_sizes": {
+          "train": 546,
+          "validation": 78,
+          "test": 156
+        },
+        "positive_class": "malignant",
+        "deterministic_cudnn": true,
+        "dataset_archive_md5": "742edef2a1fd1524b2efff4bd7ba9364"
+      }
+    },
+    {
+      "seed": 11,
+      "selected_epoch": 4,
+      "test_loss": 0.47146349381177854,
+      "test_metrics": {
+        "accuracy": 0.8076923076923077,
+        "precision": 0.6875,
+        "recall": 0.5238095238095238,
+        "specificity": 0.9122807017543859,
+        "roc_auc": 0.8182957393483709,
+        "pr_auc": 0.6406358858693814,
+        "confidence_intervals_95": {
+          "accuracy": [
+            0.7564102564102564,
+            0.8623397435897434
+          ],
+          "precision": [
+            0.5605698529411764,
+            0.8450120192307692
+          ],
+          "recall": [
+            0.38095238095238093,
+            0.6666666666666666
+          ],
+          "specificity": [
+            0.8508771929824561,
+            0.9649122807017544
+          ],
+          "roc_auc": [
+            0.7413168337510443,
+            0.8894162489557226
+          ],
+          "pr_auc": [
+            0.5370793317825674,
+            0.7817920670898136
+          ]
+        }
+      },
+      "run_config": {
+        "data": "data\\medmnist",
+        "dataset": "breastmnist",
+        "output": "runs\\breastmnist_seed_sweep\\seed_11",
+        "samples": 1000,
+        "epochs": 5,
+        "batch_size": 32,
+        "learning_rate": 0.0005,
+        "seed": 11,
+        "base_channels": 8,
+        "cpu_threads": 2,
+        "device": "cpu",
+        "torch_version": "2.14.1+cpu",
+        "numpy_version": "2.5.2",
+        "split_sizes": {
+          "train": 546,
+          "validation": 78,
+          "test": 156
+        },
+        "positive_class": "malignant",
+        "deterministic_cudnn": true,
+        "dataset_archive_md5": "742edef2a1fd1524b2efff4bd7ba9364"
+      }
+    },
+    {
+      "seed": 23,
+      "selected_epoch": 5,
+      "test_loss": 0.48734811712534,
+      "test_metrics": {
+        "accuracy": 0.7564102564102564,
+        "precision": 0.6666666666666666,
+        "recall": 0.19047619047619047,
+        "specificity": 0.9649122807017544,
+        "roc_auc": 0.8195488721804511,
+        "pr_auc": 0.6177508829709019,
+        "confidence_intervals_95": {
+          "accuracy": [
+            0.7243589743589743,
+            0.7948717948717948
+          ],
+          "precision": [
+            0.4444444444444444,
+            0.9090909090909091
+          ],
+          "recall": [
+            0.09523809523809523,
+            0.322023809523809
+          ],
+          "specificity": [
+            0.9298245614035088,
+            0.9912280701754386
+          ],
+          "roc_auc": [
+            0.7508354218880534,
+            0.8903508771929824
+          ],
+          "pr_auc": [
+            0.5224252306748781,
+            0.7658993981099019
+          ]
+        }
+      },
+      "run_config": {
+        "data": "data\\medmnist",
+        "dataset": "breastmnist",
+        "output": "runs\\breastmnist_seed_sweep\\seed_23",
+        "samples": 1000,
+        "epochs": 5,
+        "batch_size": 32,
+        "learning_rate": 0.0005,
+        "seed": 23,
+        "base_channels": 8,
+        "cpu_threads": 2,
+        "device": "cpu",
+        "torch_version": "2.14.1+cpu",
+        "numpy_version": "2.5.2",
+        "split_sizes": {
+          "train": 546,
+          "validation": 78,
+          "test": 156
+        },
+        "positive_class": "malignant",
+        "deterministic_cudnn": true,
+        "dataset_archive_md5": "742edef2a1fd1524b2efff4bd7ba9364"
+      }
+    }
+  ],
+  "summary": {
+    "accuracy": {
+      "mean": 0.7927350427350427,
+      "standard_deviation": 0.031621043989206725,
+      "per_seed": {
+        "7": 0.8141025641025641,
+        "11": 0.8076923076923077,
+        "23": 0.7564102564102564
+      }
+    },
+    "precision": {
+      "mean": 0.6766141141141141,
+      "standard_deviation": 0.010448322567354958,
+      "per_seed": {
+        "7": 0.6756756756756757,
+        "11": 0.6875,
+        "23": 0.6666666666666666
+      }
+    },
+    "recall": {
+      "mean": 0.4365079365079365,
+      "standard_deviation": 0.21604218394946348,
+      "per_seed": {
+        "7": 0.5952380952380952,
+        "11": 0.5238095238095238,
+        "23": 0.19047619047619047
+      }
+    },
+    "specificity": {
+      "mean": 0.9239766081871345,
+      "standard_deviation": 0.03652045613098479,
+      "per_seed": {
+        "7": 0.8947368421052632,
+        "11": 0.9122807017543859,
+        "23": 0.9649122807017544
+      }
+    },
+    "roc_auc": {
+      "mean": 0.8240740740740741,
+      "standard_deviation": 0.008945095618441179,
+      "per_seed": {
+        "7": 0.8343776106934002,
+        "11": 0.8182957393483709,
+        "23": 0.8195488721804511
+      }
+    },
+    "pr_auc": {
+      "mean": 0.6492325341051823,
+      "standard_deviation": 0.03654631855213684,
+      "per_seed": {
+        "7": 0.6893108334752639,
+        "11": 0.6406358858693814,
+        "23": 0.6177508829709019
+      }
+    }
+  },
+  "warning": "These runs reuse the same tiny test set and do not establish clinical validity or independent generalization."
+}

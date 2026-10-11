@@ -1,0 +1,228 @@
+{
+  "purpose": "Locked-checkpoint error review and validation-fitted temperature scaling.",
+  "checkpoint": "runs/breastmnist_baseline_seed7/model.pt",
+  "split": "test",
+  "sample_count": 156,
+  "selected_epoch": 5,
+  "weights_updated": false,
+  "threshold_selected": false,
+  "outcome_counts": {
+    "true_positive": 31,
+    "true_negative": 99,
+    "false_positive": 15,
+    "false_negative": 11
+  },
+  "false_negatives": [
+    {
+      "index": 48,
+      "label": 1,
+      "probability": 0.04052206501364708,
+      "prediction": 0,
+      "outcome": "false_negative"
+    },
+    {
+      "index": 141,
+      "label": 1,
+      "probability": 0.056204214692115784,
+      "prediction": 0,
+      "outcome": "false_negative"
+    },
+    {
+      "index": 44,
+      "label": 1,
+      "probability": 0.07427994906902313,
+      "prediction": 0,
+      "outcome": "false_negative"
+    },
+    {
+      "index": 85,
+      "label": 1,
+      "probability": 0.1166166290640831,
+      "prediction": 0,
+      "outcome": "false_negative"
+    },
+    {
+      "index": 68,
+      "label": 1,
+      "probability": 0.11859821528196335,
+      "prediction": 0,
+      "outcome": "false_negative"
+    },
+    {
+      "index": 104,
+      "label": 1,
+      "probability": 0.16614797711372375,
+      "prediction": 0,
+      "outcome": "false_negative"
+    },
+    {
+      "index": 135,
+      "label": 1,
+      "probability": 0.17477290332317352,
+      "prediction": 0,
+      "outcome": "false_negative"
+    },
+    {
+      "index": 40,
+      "label": 1,
+      "probability": 0.1924641877412796,
+      "prediction": 0,
+      "outcome": "false_negative"
+    },
+    {
+      "index": 7,
+      "label": 1,
+      "probability": 0.30534645915031433,
+      "prediction": 0,
+      "outcome": "false_negative"
+    },
+    {
+      "index": 24,
+      "label": 1,
+      "probability": 0.3532814085483551,
+      "prediction": 0,
+      "outcome": "false_negative"
+    },
+    {
+      "index": 95,
+      "label": 1,
+      "probability": 0.42551571130752563,
+      "prediction": 0,
+      "outcome": "false_negative"
+    }
+  ],
+  "false_positives": [
+    {
+      "index": 76,
+      "label": 0,
+      "probability": 0.9570996165275574,
+      "prediction": 1,
+      "outcome": "false_positive"
+    },
+    {
+      "index": 143,
+      "label": 0,
+      "probability": 0.9018466472625732,
+      "prediction": 1,
+      "outcome": "false_positive"
+    },
+    {
+      "index": 82,
+      "label": 0,
+      "probability": 0.8887653946876526,
+      "prediction": 1,
+      "outcome": "false_positive"
+    },
+    {
+      "index": 63,
+      "label": 0,
+      "probability": 0.8567171692848206,
+      "prediction": 1,
+      "outcome": "false_positive"
+    },
+    {
+      "index": 19,
+      "label": 0,
+      "probability": 0.8471003770828247,
+      "prediction": 1,
+      "outcome": "false_positive"
+    },
+    {
+      "index": 149,
+      "label": 0,
+      "probability": 0.8280271291732788,
+      "prediction": 1,
+      "outcome": "false_positive"
+    },
+    {
+      "index": 91,
+      "label": 0,
+      "probability": 0.7957631945610046,
+      "prediction": 1,
+      "outcome": "false_positive"
+    },
+    {
+      "index": 25,
+      "label": 0,
+      "probability": 0.7624605894088745,
+      "prediction": 1,
+      "outcome": "false_positive"
+    },
+    {
+      "index": 86,
+      "label": 0,
+      "probability": 0.7588796019554138,
+      "prediction": 1,
+      "outcome": "false_positive"
+    },
+    {
+      "index": 73,
+      "label": 0,
+      "probability": 0.7372057437896729,
+      "prediction": 1,
+      "outcome": "false_positive"
+    },
+    {
+      "index": 56,
+      "label": 0,
+      "probability": 0.5944293141365051,
+      "prediction": 1,
+      "outcome": "false_positive"
+    },
+    {
+      "index": 131,
+      "label": 0,
+      "probability": 0.589377760887146,
+      "prediction": 1,
+      "outcome": "false_positive"
+    },
+    {
+      "index": 113,
+      "label": 0,
+      "probability": 0.5436416268348694,
+      "prediction": 1,
+      "outcome": "false_positive"
+    },
+    {
+      "index": 151,
+      "label": 0,
+      "probability": 0.522864580154419,
+      "prediction": 1,
+      "outcome": "false_positive"
+    },
+    {
+      "index": 89,
+      "label": 0,
+      "probability": 0.5014677047729492,
+      "prediction": 1,
+      "outcome": "false_positive"
+    }
+  ],
+  "false_negative_gallery": "runs\\breastmnist_baseline_seed7\\error_analysis\\false_negatives.png",
+  "false_positive_gallery": "runs\\breastmnist_baseline_seed7\\error_analysis\\false_positives.png",
+  "conflict_scores": [
+    {
+      "split": "test",
+      "index": 76,
+      "label": 0,
+      "digest": "3379cc1edee11c1a51e89b6ac288ff9fc8a23794b01eb051a7d12769cba45b64",
+      "conflicting_labels": true,
+      "model_probability": 0.9570996165275574,
+      "model_outcome": "false_positive"
+    }
+  ],
+  "temperature_scaling": {
+    "temperature": 1.0,
+    "fit_split": "val",
+    "evaluated_on_fit_split": false,
+    "unscaled": {
+      "brier_score": 0.12284902142200042,
+      "expected_calibration_error": 0.08419253267325424
+    },
+    "scaled": {
+      "brier_score": 0.12284902002008391,
+      "expected_calibration_error": 0.08419253156594983
+    },
+    "warning": "Temperature was fit on the validation split only. It rescales probabilities for a calibration diagnostic and is not a new model, threshold, or clinical operating point."
+  }
+}

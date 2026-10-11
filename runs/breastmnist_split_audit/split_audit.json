@@ -1,0 +1,43 @@
+{
+  "purpose": "Exact-image overlap audit for published BreastMNIST splits; not a patient-level leak check.",
+  "split_sizes": {
+    "train": 546,
+    "val": 78,
+    "test": 156
+  },
+  "unique_images": 779,
+  "duplicate_groups": 1,
+  "cross_split_duplicate_groups": 1,
+  "within_split_duplicate_groups": 0,
+  "duplicates": [
+    {
+      "digest": "3379cc1edee11c1a51e89b6ac288ff9fc8a23794b01eb051a7d12769cba45b64",
+      "count": 2,
+      "cross_split": true,
+      "conflicting_labels": true,
+      "splits": [
+        "test",
+        "train"
+      ],
+      "labels": [
+        0,
+        1
+      ],
+      "members": [
+        {
+          "split": "train",
+          "index": 115,
+          "label": 1,
+          "digest": "3379cc1edee11c1a51e89b6ac288ff9fc8a23794b01eb051a7d12769cba45b64"
+        },
+        {
+          "split": "test",
+          "index": 76,
+          "label": 0,
+          "digest": "3379cc1edee11c1a51e89b6ac288ff9fc8a23794b01eb051a7d12769cba45b64"
+        }
+      ]
+    }
+  ],
+  "warning": "Identical pixels can indicate label leakage between splits, but distinct images from the same person would not be detected without patient identifiers."
+}

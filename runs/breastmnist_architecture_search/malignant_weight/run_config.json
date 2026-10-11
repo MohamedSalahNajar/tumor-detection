@@ -1,0 +1,29 @@
+{
+  "data": "data\\medmnist",
+  "dataset": "breastmnist",
+  "output": "runs\\breastmnist_architecture_search\\malignant_weight",
+  "samples": 1000,
+  "epochs": 4,
+  "batch_size": 32,
+  "learning_rate": 0.0005,
+  "seed": 7,
+  "base_channels": 8,
+  "blocks_per_stage": 1,
+  "dropout_rate": 0.4,
+  "weight_decay": 0.01,
+  "positive_class_weight": 2.7,
+  "cpu_threads": 2,
+  "skip_test": true,
+  "device": "cpu",
+  "torch_version": "2.14.1+cpu",
+  "numpy_version": "2.5.2",
+  "split_sizes": {
+    "train": 546,
+    "validation": 78,
+    "test": 156
+  },
+  "positive_class": "malignant",
+  "deterministic_cudnn": true,
+  "test_evaluation_enabled": false,
+  "dataset_archive_md5": "742edef2a1fd1524b2efff4bd7ba9364"
+}

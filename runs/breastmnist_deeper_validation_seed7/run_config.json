@@ -1,0 +1,28 @@
+{
+  "data": "data\\medmnist",
+  "dataset": "breastmnist",
+  "output": "runs/breastmnist_deeper_validation_seed7",
+  "samples": 1000,
+  "epochs": 5,
+  "batch_size": 32,
+  "learning_rate": 0.0003,
+  "seed": 7,
+  "base_channels": 16,
+  "blocks_per_stage": 2,
+  "dropout_rate": 0.5,
+  "weight_decay": 0.03,
+  "cpu_threads": 2,
+  "skip_test": true,
+  "device": "cpu",
+  "torch_version": "2.14.1+cpu",
+  "numpy_version": "2.5.2",
+  "split_sizes": {
+    "train": 546,
+    "validation": 78,
+    "test": 156
+  },
+  "positive_class": "malignant",
+  "deterministic_cudnn": true,
+  "test_evaluation_enabled": false,
+  "dataset_archive_md5": "742edef2a1fd1524b2efff4bd7ba9364"
+}

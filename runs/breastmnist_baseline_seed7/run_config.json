@@ -1,0 +1,23 @@
+{
+  "data": "data/medmnist",
+  "dataset": "breastmnist",
+  "output": "runs/breastmnist_baseline_seed7",
+  "samples": 1000,
+  "epochs": 5,
+  "batch_size": 32,
+  "learning_rate": 0.0005,
+  "seed": 7,
+  "base_channels": 8,
+  "cpu_threads": 2,
+  "device": "cpu",
+  "torch_version": "2.14.1+cpu",
+  "numpy_version": "2.5.2",
+  "split_sizes": {
+    "train": 546,
+    "validation": 78,
+    "test": 156
+  },
+  "positive_class": "malignant",
+  "dataset_archive_md5": "742edef2a1fd1524b2efff4bd7ba9364",
+  "checkpoint_selected_epoch": 5
+}
